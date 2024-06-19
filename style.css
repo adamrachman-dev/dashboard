@@ -1,8 +1,36 @@
 /* google fonts: roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* custom properties */
+:root {
+    --highlight: #0ea5e9;
+    --accent: #f59e0b;
+    --base: #d1d5db;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--base);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 120px 1fr / 240px 1fr;
+}
+
+.header {
+    background-color: white;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--highlight);
 }
