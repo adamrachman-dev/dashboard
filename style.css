@@ -19,6 +19,13 @@ body {
     background-color: var(--base);
 }
 
+img {
+    /* make icon turns white */
+    filter: invert(100%);
+
+    height: 1.3rem;
+}
+
 .container {
     height: 100vh;
     display: grid;
@@ -33,4 +40,48 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-color: var(--highlight);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.logo > div {
+    flex-basis: 42px;
+}
+
+.logo img {
+    height: 2.6rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.menu > div > div {
+    flex-basis: 42px;
+    justify-self: flex-end;
+}
+
+.menu > div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
 }
