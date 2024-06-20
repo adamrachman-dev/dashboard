@@ -3,10 +3,9 @@
 
 /* custom properties */
 :root {
-    --highlight: #0ea5e9;
+    --highlight: #0284c7;
     --accent: #f59e0b;
-    --base: #d1d5db;
-    --base-light: #e2e8f0;
+    --base: #e2e8f0;
 }
 
 * {
@@ -30,12 +29,17 @@ img {
 .container {
     height: 100vh;
     display: grid;
-    grid-template: 120px 1fr / 240px 1fr;
+    grid-template: auto 1fr / 1fr 4fr;
 }
 
 .header {
     background-color: white;
-    padding: 1rem 2.2rem;
+    padding: 1rem 2.4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
 }
 
 .header img {
@@ -46,14 +50,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .search,
 .profile {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.5rem;
 }
 
 .search {
@@ -74,14 +78,15 @@ img {
     padding: .2rem 1rem;
     border: none;
     border-radius: 1.3rem;
-    background-color: var(--base-light);
+    background-color: var(--base);
 }
 
 .profile {
     font-weight: bold;
 }
 
-.profile-photo {
+.profile-photo,
+.bottom-profile > img {
     width: 2.6rem;
     height: 2.6rem;
     border-radius: 50%;
@@ -90,6 +95,49 @@ img {
 }
 
 .profile > * {
+    cursor: pointer;
+}
+
+.header > .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-profile,
+.bottom-action {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.bottom-profile-name {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.bottom-profile-name > p:last-child {
+    font-size: 1.3rem;
+}
+
+.bottom-profile > img {
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+.bottom-action > button {
+    font-weight: bold;
+    font-size: .9rem;
+    color: white;
+    background-color: var(--highlight);
+    border-style: none;
+    border-radius: 1.2rem;
+    padding: .64rem 0;
+    padding-bottom: .66rem;
+    width: 5.6rem;
     cursor: pointer;
 }
 
