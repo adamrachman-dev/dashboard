@@ -6,6 +6,7 @@
     --highlight: #0ea5e9;
     --accent: #f59e0b;
     --base: #d1d5db;
+    --base-light: #e2e8f0;
 }
 
 * {
@@ -34,6 +35,62 @@ img {
 
 .header {
     background-color: white;
+    padding: 1rem 2.2rem;
+}
+
+.header img {
+    filter: none;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.search,
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.search {
+    flex: 1;
+}
+
+.search img {
+    height: 1.6rem;
+}
+
+.search > label {
+    cursor: pointer;
+}
+
+.search > input {
+    width: 100%;
+    height: 2rem;
+    padding: .2rem 1rem;
+    border: none;
+    border-radius: 1.3rem;
+    background-color: var(--base-light);
+}
+
+.profile {
+    font-weight: bold;
+}
+
+.profile-photo {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.profile > * {
+    cursor: pointer;
 }
 
 .sidebar {
