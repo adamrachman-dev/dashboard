@@ -3,8 +3,8 @@
 
 /* custom properties */
 :root {
-    --highlight: #0284c7;
-    --accent: #f59e0b;
+    --highlight: #1992d4;
+    --accent: #f0b429;
     --base: #e2e8f0;
 }
 
@@ -98,10 +98,11 @@ img {
     cursor: pointer;
 }
 
-.header > .bottom {
+.bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8rem;
 }
 
 .bottom-profile,
@@ -189,4 +190,69 @@ img {
     align-items: center;
     gap: 0.4rem;
     cursor: pointer;
+}
+
+.main {
+    padding: 1.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.main-content > p,
+.announcements > p,
+.trending > p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(25ch, 1fr));
+}
+
+.projects img {
+    filter: none;
+}
+
+.projects > div {
+    background-color: white;
+    border-radius: 6px;
+    /* height: 11rem; */
+    height: max(8ch, auto);
+    border-left: .5rem solid var(--accent);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+    padding: 1.5rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.projects-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+}
+
+.projects-action > img {
+    cursor: pointer;
+}
+
+.projects-text {
+    font-size: .8rem;
+    opacity: .67;
+}
+
+.projects-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
 }
