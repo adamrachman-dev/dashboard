@@ -254,6 +254,7 @@ img {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: .2rem;
+    cursor: pointer;
 }
 
 .announcements > div,
@@ -270,6 +271,7 @@ img {
 .announcements-text p:first-child {
     font-weight: bold;
     font-size: .8rem;
+    cursor: pointer;
 }
 
 .announcements p + p {
@@ -293,10 +295,12 @@ img {
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
+    cursor: pointer;
 }
 
 .person-info p:first-child {
     font-size: .9rem;
+    cursor: pointer;
 }
 
 .person-info p + p {
